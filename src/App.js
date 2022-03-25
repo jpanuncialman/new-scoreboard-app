@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import bg1 from './assets/1.png';
 import bg2 from './assets/2.png';
@@ -9,13 +8,13 @@ import bubu from './assets/4.png';
 function App() {
   const [scoreOne, setScoreOne] = useState(0);
   const [scoreTwo, setScoreTwo] = useState(0);
-  const [livAnimate, setLivAnimate] = useState(false);
-  const [bubuAnimate, setBubuAnimate] = useState(false);
+  // const [livAnimate, setLivAnimate] = useState(false);
+  // const [bubuAnimate, setBubuAnimate] = useState(false);
 
   return (
     <div id="container">
       <div className="scoreboard-container">
-        <img src={liv} className="liv" />
+        <img src={liv} className="liv" alt="liv" />
       <div className="scoreboard">
         <div style={{'backgroundImage': `url(${bg1})`, 'backgroundPosition': '10% 50%'}} className="scoreboard--section scoreboard--section-1">
           {scoreOne}
@@ -26,7 +25,7 @@ function App() {
       </div>
       </div>
       <div className="scoreboard-buttons">
-      <img src={bubu} className="bubu" />
+      <img src={bubu} className="bubu" alt="bubu" />
         <div className="scoreboard-buttons--section">
           <button onClick={() => {setScoreOne(scoreOne + 1)}} className="scoreboard-buttons--button">Liv+</button>
           <button onClick={() => {setScoreOne(scoreOne - 1)}} className="scoreboard-buttons--button">Liv-</button>
