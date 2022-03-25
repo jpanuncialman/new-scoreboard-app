@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+#container {
+  background: #04F404;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.scoreboard-container {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.liv {
+  position: absolute;
+  left: -100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bubu {
+  position: absolute;
+  right: -120px;
+  top: -350px;
+}
+.scoreboard {
+  margin: 0 auto;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 200px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.scoreboard--section {
+  flex-basis: 50%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scoreboard-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.scoreboard-buttons--button {
+  z-index: 5;
+  font-size: 24px;
+}
+
+.scoreboard-buttons--section {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreboard--section-1 {
+  background-position: 19% 50%;
+}
+
+.scoreboard-buttons--section button {
+  margin-right: 2em;
 }
