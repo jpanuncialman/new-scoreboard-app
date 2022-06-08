@@ -15,14 +15,14 @@ body {
 .ain {
   position: absolute;
   left: -100px;
-  bottom: -150px;
+  bottom: -50px;
   max-width: 750px;
 }
 
 .bubu {
   position: absolute;
   right: 0px;
-  bottom: 0;
+  bottom: 0px;
 }
 .scoreboard {
   margin: 0 auto;
