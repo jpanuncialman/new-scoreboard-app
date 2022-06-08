@@ -7,15 +7,22 @@ body {
   position: relative;
 }
 
-.liv {
+.chara {
+  max-width: 500px;
+  height: auto;
+}
+
+.ain {
   position: absolute;
   left: -100px;
+  bottom: 0;
+  max-width: 800px;
 }
 
 .bubu {
   position: absolute;
-  right: -120px;
-  top: -350px;
+  right: 0px;
+  bottom: 150px;
 }
 .scoreboard {
   margin: 0 auto;
@@ -28,12 +35,23 @@ body {
 }
 
 .scoreboard--section {
-  flex-basis: 50%;
+  flex-basis: 40%;
   min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2em;
+  flex-direction: column;
+  margin-bottom: 1.9em;
+}
+
+.scoreboard--section .name {
+  margin: 0;
+  font-size: 125px;
+  text-transform: uppercase;
+}
+
+.scoreboard--section .score {
+  
 }
 
 .scoreboard-buttons {
